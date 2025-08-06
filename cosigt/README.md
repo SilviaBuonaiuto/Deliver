@@ -95,6 +95,14 @@ samtools faidx gencode.v47.pc_transcripts.fa
 Once all the files are available, configure the pipeline using a dedicated setup script and run it on the cluster. This will create the script to run cosigt workflow inside the folder /cosigt/cosigt_smk  
 [setup_cosigt.sh](https://github.com/SilviaBuonaiuto/Deliver/blob/main/cosigt/scripts/setup_cosigt.sh)
 
+## Run cosigt pipeline
+
+### 1. Activate smk7324app132 environment
+### 2. Run cosigt_smk_htcondor.sh
+Run the script from this location /lustre/home/enza/deliver/napoli/cosi/cosigt/cosigt_smk
+```
+./cosigt_smk_htcondor.sh
+```
 ## Notes
 Understand why this is the output directory and change it /lustrehome/silvia/junk/cosigt_setup/  
 For now I manually moved it in /lustre/home/enza/deliver/napoli/cosi/
