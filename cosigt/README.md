@@ -96,5 +96,5 @@ Once all the files are available, configure the pipeline using a dedicated setup
 
 
 ## Notes
-Understand why this is the output directory and change it /lustrehome/silvia/junk/cosigt_setup/
+Understand why this is the output directory and change it /lustrehome/silvia/junk/cosigt_setup/  
 For now I manually moved it in /lustre/home/enza/deliver/napoli/cosi/
