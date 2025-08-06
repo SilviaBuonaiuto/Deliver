@@ -1,0 +1,25 @@
+# HTCondor profile configuration for Snakemake
+cluster: htcondor-submit.py
+cluster-status: htcondor-status.py
+cluster-cancel: condor_rm
+cluster-sidecar: htcondor-sidecar.py
+max-jobs-per-second: 10
+max-status-checks-per-second: 10
+local-cores: 1
+latency-wait: 30
+use-singularity: True
+singularity-args: "--bind /lustre/home/enza"
+use-conda: False
+rerun-incomplete: True
+jobs: 500
+keep-going: True
+rerun-triggers: mtime
+restart-times: 3
+scheduler: greedy
+printshellcmds: True
+
+# Environment settings - just list the variable names
+envvars:
+  - PATH
+  - HOME
+  - USER
