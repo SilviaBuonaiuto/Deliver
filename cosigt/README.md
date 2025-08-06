@@ -26,13 +26,13 @@ cd ~/.config/snakemake/htcondor
 ### 2. Create the Main Configuration File
 [config.yaml](https://github.com/SilviaBuonaiuto/Deliver/blob/main/cosigt/htcondor/config.yaml)
 ### 3. Create htcondor-submit.py (Job Submission Script)
-
+[htcondor-submit.py](https://github.com/SilviaBuonaiuto/Deliver/blob/main/cosigt/htcondor/htcondor-submit.py)
 ### 4. Create htcondor-status.py (Job Status Checking)
-
+[htcondor-status.py](https://github.com/SilviaBuonaiuto/Deliver/blob/main/cosigt/htcondor/htcondor-status.py)
 ### 5. Create htcondor-jobscript.sh (Job Wrapper)
-
+[htcondor-jobscript.sh](https://github.com/SilviaBuonaiuto/Deliver/blob/main/cosigt/htcondor/htcondor-jobscript.sh)
 ### 6. Create htcondor-sidecar.py (Job Monitoring)
-
+[htcondor-sidecar.py](https://github.com/SilviaBuonaiuto/Deliver/blob/main/cosigt/htcondor/htcondor-sidecar.py)
 ### 7. Create CookieCutter.py (For Compatibility)
 
 
