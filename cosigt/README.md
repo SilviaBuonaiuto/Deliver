@@ -24,9 +24,22 @@ for chr in chr10 chr17; do
 
         # Extract FASTA sequences
         cat "${WORK_DIR}/${chr}.all_ids.txt" | while read f; do
-        ~/anaconda3/envs/smk7324app132/bin/agc getctg /lustre/home/enza/deliver/napoli/cosi/assemblies_a/HPRC-yr1.agc $f | /lustrehome/silvia/bin/htslib-1.15/bgzip >> "${WORK_DIR}/${chr}.fasta.gz"
+        ~/anaconda3/envs/smk7324app132/bin/agc getctg /lustre/home/enza/deliver/napoli/cosi/assemblies_a/HPRC-yr1.agc $f | \
+        /lustrehome/silvia/bin/htslib-1.15/bgzip >> "${WORK_DIR}/${chr}.fasta.gz"
 done
 samtools faidx "${WORK_DIR}/${chr}.fasta.gz"
 done
 
+```
+
+### Region of interest
+
+Create bed file containing regions of interest
+```
+# Create folder to store regions of interest
+mkdir regions
+
+# Write bed file roi.bed
+chr10   31318495        31529814        ZEB1
+chr17   31094927        31382116        NF1
 ```
