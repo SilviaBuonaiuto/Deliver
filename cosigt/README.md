@@ -93,7 +93,12 @@ samtools faidx gencode.v47.pc_transcripts.fa
 
 ## Configure workflow
 Once all the files are available, configure the pipeline using a dedicated setup script and run it on the cluster. This will create the script to run cosigt workflow inside the folder /cosigt/cosigt_smk  
-[setup_cosigt.sh](https://github.com/SilviaBuonaiuto/Deliver/blob/main/cosigt/scripts/setup_cosigt.sh)
+[setup_cosigt.sh](https://github.com/SilviaBuonaiuto/Deliver/blob/main/cosigt/scripts/setup_cosigt.sh)  
+
+### Create script to setup cache on the cluster
+This will tell to download tools and requirements in a desired destination  
+[setup_cache_htcondor.sh](https://github.com/SilviaBuonaiuto/Deliver/blob/main/cosigt/scripts/setup_cache_htcondor.sh)
+
 
 ## Run cosigt pipeline
 
