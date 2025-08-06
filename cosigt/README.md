@@ -92,7 +92,7 @@ samtools faidx gencode.v47.pc_transcripts.fa
 ```
 
 ## Configure workflow
-Once all the files are available, configure the pipeline using a dedicated setup script and run it on the cluster. This will create the script to run cosigt workflow inside the folder /cosigt/cosigt_smk
+Once all the files are available, configure the pipeline using a dedicated setup script and run it on the cluster. This will create the script to run cosigt workflow inside the folder /cosigt/cosigt_smk  
 [setup_cosigt.sh](https://github.com/SilviaBuonaiuto/Deliver/blob/main/cosigt/scripts/setup_cosigt.sh)
 
 ## Notes
