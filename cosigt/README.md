@@ -23,7 +23,17 @@ mkdir -p ~/.config/snakemake/htcondor
 cd ~/.config/snakemake/htcondor
 ```
 
-# 2. Create the Main Configuration File
+### 2. Create the Main Configuration File
+[config.yaml](https://github.com/SilviaBuonaiuto/Deliver/blob/main/cosigt/htcondor/config.yaml)
+### 3. Create htcondor-submit.py (Job Submission Script)
+
+### 4. Create htcondor-status.py (Job Status Checking)
+
+### 5. Create htcondor-jobscript.sh (Job Wrapper)
+
+### 6. Create htcondor-sidecar.py (Job Monitoring)
+
+### 7. Create CookieCutter.py (For Compatibility)
 
 
 ## Required files
