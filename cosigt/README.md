@@ -1,5 +1,19 @@
 # Cosigt workflow on Recas
 
+## Install snakemake and cosigt
+```
+conda create \
+    -n smk7324app132 \
+    bioconda::snakemake=7.32.4 \
+    conda-forge::apptainer=1.3.2 \
+    conda-forge::cookiecutter=2.6.0 \
+    conda-forge::gdown
+```
+Clone cosigt directory from github
+```
+git clone https://github.com/davidebolo1993/cosigt.git
+```
+
 ## Required files
 
 ### 1. Reference Genome (fasta) 
@@ -32,7 +46,7 @@ done
 
 ```
 
-### Region of interest
+### 4. Region of interest
 
 Create bed file containing regions of interest
 ```
@@ -43,3 +57,4 @@ mkdir regions
 chr10   31318495        31529814        ZEB1
 chr17   31094927        31382116        NF1
 ```
+
