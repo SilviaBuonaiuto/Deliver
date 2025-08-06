@@ -76,6 +76,21 @@ chr10   31318495        31529814        ZEB1
 chr17   31094927        31382116        NF1
 ```
 
+### 5. Annotation files
+```
+# Download gene annotations for the regions of interest
+wget https://ftp.ebi.ac.uk/pub/databases/gencode/Gencode_human/release_47/gencode.v47.annotation.gtf.gz
+
+# Download Protein-coding transcript sequences
+wget https://ftp.ebi.ac.uk/pub/databases/gencode/Gencode_human/release_47/gencode.v47.pc_transcripts.fa.gz
+
+# Unzip protein-coding transcript sequences fasta file
+bgzip -d gencode.v47.pc_transcripts.fa.gz
+
+# Index protein-coding transcript sequences fasta file
+samtools faidx gencode.v47.pc_transcripts.fa
+```
+
 ## Configure workflow
 Once all the files are available, configure the pipeline using a dedicated setup script and run it on the cluster
 
