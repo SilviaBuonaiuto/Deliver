@@ -14,6 +14,18 @@ Clone cosigt directory from github
 git clone https://github.com/davidebolo1993/cosigt.git
 ```
 
+## Configure workflow on HTcondor
+
+
+### 1. Create the HTCondor Profile Directory
+```
+mkdir -p ~/.config/snakemake/htcondor
+cd ~/.config/snakemake/htcondor
+```
+
+# 2. Create the Main Configuration File
+
+
 ## Required files
 
 ### 1. Reference Genome (fasta) 
@@ -57,4 +69,5 @@ mkdir regions
 chr10   31318495        31529814        ZEB1
 chr17   31094927        31382116        NF1
 ```
+
 
