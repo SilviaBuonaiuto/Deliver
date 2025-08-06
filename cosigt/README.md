@@ -15,8 +15,6 @@ git clone https://github.com/davidebolo1993/cosigt.git
 ```
 
 ## Configure workflow on HTcondor
-
-
 ### 1. Create the HTCondor Profile Directory
 ```
 mkdir -p ~/.config/snakemake/htcondor
@@ -33,8 +31,6 @@ cd ~/.config/snakemake/htcondor
 [htcondor-jobscript.sh](https://github.com/SilviaBuonaiuto/Deliver/blob/main/cosigt/htcondor/htcondor-jobscript.sh)
 ### 6. Create htcondor-sidecar.py (Job Monitoring)
 [htcondor-sidecar.py](https://github.com/SilviaBuonaiuto/Deliver/blob/main/cosigt/htcondor/htcondor-sidecar.py)
-### 7. Create CookieCutter.py (For Compatibility)
-
 
 ## Required files
 
@@ -80,4 +76,10 @@ chr10   31318495        31529814        ZEB1
 chr17   31094927        31382116        NF1
 ```
 
+## Configure workflow
+Once all the files are available, configure the pipeline using a dedicated setup script and run it on the cluster
 
+
+## Notes
+Understand why this is the output directory and change it /lustrehome/silvia/junk/cosigt_setup/
+For now I manually moved it in /lustre/home/enza/deliver/napoli/cosi/
