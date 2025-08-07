@@ -108,6 +108,3 @@ Run the script from this location /lustre/home/enza/deliver/napoli/cosi/cosigt/c
 ```
 ./cosigt_smk_htcondor.sh
 ```
-## Notes
-Understand why this is the output directory and change it /lustrehome/silvia/junk/cosigt_setup/  
-For now I manually moved it in /lustre/home/enza/deliver/napoli/cosi/
